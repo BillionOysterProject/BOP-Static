@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link href="css/bop-staging.css" rel="stylesheet">
-    <!-- Select 2 -->
-    <link rel="stylesheet" href="css/select2.css">
+    <!-- Select 2
+    <link rel="stylesheet" href="css/select2.css"> -->
 
 
 
@@ -84,16 +84,16 @@
                 <!-- Lesson Upload -->
                 <div class="panel-heading">
                   <div class="panel-title">Lesson Upload</div>
-                  <div class="panel-controls">
+                  <!-- <div class="panel-controls">
                       <ul>
                           <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
                           </li>
                           <!--<li><a href="" data-toggle="refresh" class="portlet-refresh"><i class="fa fa-chevron-down"></i></a>
                           </li>
                            <li><a href="" data-toggle="close" class="portlet-close"><i class="portlet-icon portlet-icon-close"></i></a>
-                          </li> -->
+                          </li> --
                       </ul>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="panel-body">
                   <div class="row">
@@ -104,7 +104,7 @@
 
                         <div class="row">
                         <div class="col-md-12">
-                          <select class="js-example-basic-multiple col-md-12" multiple="" style="" id="source">
+                          <select class="js-example-basic-multiple " multiple="" style="width: 100%" id="source">
 
                           </select>
                         </div>
@@ -131,12 +131,16 @@
                   <div class="panel-title">Lesson Overview</div>
                   <div class="panel-controls">
                       <ul>
-                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                          <li>
+
+                            <a class="portlet-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+<i class="fa fa-chevron-down"></i>
+                            </a>
                           </li>
                       </ul>
                   </div>
                 </div>
-                <div class="panel-body">
+                <div id="collapseExample" class="panel-body collapse in">
                   <div class="row"><!-- Row nest -->
                     <div class="col-md-6">
                       <div class="row">
@@ -191,13 +195,13 @@
                   <div class="col-md-6">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label for="SubjectArea"><i class="fa fa-graduation-cap"></i>Subject Area(s) <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span></label>
+                        <label for="SubjectArea"><!-- <i class="fa fa-graduation-cap">--></i>Subject Area(s) <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span></label>
 
                         <!-- Select 2 plugin -->
 
                         <div class="row">
                         <div class="col-md-12">
-                          <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                          <select class="js-example-basic-multiple" multiple="multiple" style="width: 100%" id="source">
                             <optgroup label="A">
                               <option value="art">Art</option>
                               <option value="agriscience">Agriscience & Technology</option>
@@ -272,12 +276,13 @@
                       <div class="panel-title">Lesson Objectives</div>
                       <div class="panel-controls">
                           <ul>
-                              <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                              <li><a class="portlet-collapse" data-toggle="collapse" href="#collapseLessonObject" aria-expanded="false" aria-controls="collapseLessonObject">
+    <i class="fa fa-chevron-down"></i></a>
                               </li>
                           </ul>
                       </div>
                     </div>
-                    <div class="panel-body">
+                    <div id="collapseLessonObject" class="panel-body collapse in">
                       <div class="row">
                         <div class="col-md-12">
                           <label for="objectives">Objectives</label>
@@ -295,12 +300,14 @@
                   <div class="panel-title">Materials & Resources</div>
                   <div class="panel-controls">
                       <ul>
-                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                          <li><a class="portlet-collapse" data-toggle="collapse" href="#collapseMaterials" aria-expanded="false" aria-controls="collapseMaterials">
+<i class="fa fa-chevron-down"></i></a>
+
                           </li>
                       </ul>
                   </div>
                 </div>
-                <div class="panel-body">
+                <div id="collapseMaterials" class="panel-body collapse in">
                   <div class="row">
                     <div class="col-md-6">
 
@@ -369,12 +376,14 @@
                       <div class="panel-title">Background</div>
                       <div class="panel-controls">
                           <ul>
-                              <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                              <li><a class="portlet-collapse" data-toggle="collapse" href="#collapseBackground" aria-expanded="false" aria-controls="collapseBackground">
+    <i class="fa fa-chevron-down"></i></a>
+
                               </li>
                           </ul>
                       </div>
                     </div>
-                    <div class="panel-body">
+                    <div id="collapseBackground" class="panel-body collapse in">
                       <div class="row">
                         <div class="col-md-12">
                           <label for="background">Background</label>
@@ -389,14 +398,81 @@
 
               <div class="row">
                 <div class="col-md-12">
+                  <!-- Lesson Objectives -->
                   <div class="panel panel-default">
-                    <div class="panel-body">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <label for="insttructionplan">Instruction Plan</label>
-                          <textarea class="form-control" rows="6"></textarea>
-                        </div>
+                    <div class="panel-heading">
+                      <div class="panel-title">Instruction Plan</div>
+                      <div class="panel-controls">
+                          <ul>
+                              <li><a class="portlet-collapse" data-toggle="collapse" href="#collapseInstructionPlan" aria-expanded="false" aria-controls="collapseInstructionPlan">
+    <i class="fa fa-chevron-down"></i></a>
+
+                              </li>
+                          </ul>
                       </div>
+                    </div>
+                    <div id="collapseInstructionPlan" class="panel-body collapse in">
+
+                    <!-- Insert panel tabs -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-transparent">
+                            <ul class="nav nav-tabs nav-tabs-right nav-justified" id="tab-4" role="tablist">
+                                <li class="active"><a href="#tab1Engage" data-toggle="tab" pg-tab role="tab">Engage</a>
+                                </li>
+                                <li><a href="#tab2Explore" data-toggle="tab" pg-tab role="tab">Explore</a>
+                                </li>
+                                <li><a href="#tab3Explain" data-toggle="tab" pg-tab role="tab">Explain</a>
+                                </li>
+                                <li><a href="#tab4Elaborate" data-toggle="tab" pg-tab role="tab">Elaborate</a>
+                                </li>
+                                <li><a href="#tab5Evaluate" data-toggle="tab" pg-tab role="tab">Evaluate</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content bg-white">
+                                <div class="tab-pane active" id="tab1Engage">
+                                    <div class="row column-seperation">
+                                      <div class="col-md-12">
+                                        <label for="objectives">Engage</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab2Explore">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label for="objectives">Explore</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab3Explain">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label for="objectives">Explain</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab4Elaborate">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label for="objectives">Elaborate</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab5Evaluate">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label for="objectives">Evaluate</label>
+                                        <textarea class="form-control" rows="6"></textarea>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // panel tabs -->
                     </div>
                   </div>
                 </div>
@@ -406,6 +482,18 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">Standards</div>
+                      <div class="panel-controls">
+                          <ul>
+                              <li><a class="portlet-collapse" data-toggle="collapse" href="#collapseBoard" aria-expanded="false" aria-controls="collapseBoard">
+    <i class="fa fa-chevron-down"></i></a>
+
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div id="collapseBoard" class="panel-body collapse in">
                     <div class="panel-body">
                       <div class="row">
                         <div class="col-md-12">
@@ -415,7 +503,7 @@
 
                             <div class="row">
                             <div class="col-md-12">
-                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                              <select class="js-example-basic-multiple " multiple="multiple" style="width: 100%" id="source">
                                 <optgroup label="PS1 Matter and Its Interactions">
                                   <option value="ps1A">PS1A Structure and Properties of matter</option>
                                   <option value="ps1b">PS1B Chemical Reactions</option>
@@ -452,7 +540,7 @@
 
                             <div class="row">
                             <div class="col-md-12">
-                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                              <select class="js-example-basic-multiple" multiple="multiple" style="width: 100%" id="source">
                                 <optgroup label="PS1 Matter and Its Interactions">
                                   <option value="ps1A">PS1A Structure and Properties of matter</option>
                                   <option value="ps1b">PS1B Chemical Reactions</option>
@@ -489,7 +577,7 @@
 
                             <div class="row">
                             <div class="col-md-12">
-                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                              <select class="js-example-basic-multiple" multiple="multiple" style="width: 100%" id="source">
                                 <optgroup label="PS1 Matter and Its Interactions">
                                   <option value="ps1A">PS1A Structure and Properties of matter</option>
                                   <option value="ps1b">PS1B Chemical Reactions</option>
@@ -526,7 +614,7 @@
 
                             <div class="row">
                             <div class="col-md-12">
-                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                              <select class="js-example-basic-multiple" multiple="multiple" style="width: 100%" id="source">
                                 <optgroup label="PS1 Matter and Its Interactions">
                                   <option value="ps1A">PS1A Structure and Properties of matter</option>
                                   <option value="ps1b">PS1B Chemical Reactions</option>
@@ -602,6 +690,64 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="input-group modal-search">
+                  <!-- Select 2 plugin -->
+
+                  <div class="row">
+                  <div class="col-md-12">
+                    <select class="js-example-basic-multiple" multiple="multiple" style="width: 250px" id="source">
+                      <optgroup label="A">
+                        <option value="art">Art</option>
+                        <option value="agriscience">Agriscience & Technology</option>
+                        <option value="arithmetic">Arithmetic</option>
+                        <option value="algebra">Algebra</option>
+                      </optgroup>
+                      <optgroup label="B">
+                        <option value="band">Band</option>
+                        <option value="biology">Biology</option>
+                      </optgroup>
+                      <optgroup label="C">
+                        <option value="chemistry">Chemistry</option>
+                        <option value="civics">Civics</option>
+                        <option value="computer">Computer Information Systems</option>
+                        <option value="creativewriting">Creative Writing</option>
+                      </optgroup>
+                      <optgroup label="E">
+                        <option value="earthscience">Earth Science</option>
+                        <option value="economics">Economics</option>
+                        <option value="english">English</option>
+                      </optgroup>
+                      <optgroup label="G">
+                        <option value="earthscience">Geometry</option>>
+                      </optgroup>
+                      <optgroup label="L">
+                        <option value="lifescience">Life Science</option>
+                      </optgroup>
+                      <optgroup label="M">
+                        <option value="math">Math</option>
+                        <option value="marinebiology">Marine Biology</option>
+                      </optgroup>
+                      <optgroup label="P">
+                        <option value="physicalscience">Physical Science</option>
+                        <optgroup label="G">
+                          <option value="prealgebra">Pre-Algebra</option>
+                        </optgroup>
+                      </optgroup>
+                      <optgroup label="S">
+                        <option value="science">Science</option>
+                        <option value="socialengineering">Social Engineering</option>
+                        <option value="socialstudies">Social Studies</option>
+                      </optgroup>
+                      <optgroup label="T">
+                        <option value="technology">Technology</option>
+                      </optgroup>
+                      <optgroup label="W">
+                        <option value="worldgeography">World Geography</option>>
+                      </optgroup>
+                    </select>
+                  </div>
+                  </div>
+
+                  <!-- //Select 2 --
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                   </span>
@@ -609,7 +755,7 @@
                 </div><!-- /input-group -->
               </div><!-- /.col-lg-6 -->
             </div>
-            <ul class="subject-cat-list">
+            <!--<ul class="subject-cat-list">
               <li class="subject-cat-title">A</li>
                 <ul class="subject-cat-list_subcat">
                   <li>Art</li>
@@ -623,13 +769,14 @@
                 <ul class="subject-cat-list_subcat">
                   <li>Chemistry</li>
                 </ul>
-            </ul>
+            </ul> -->
           </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
     </div>
   </div>
 </div>
@@ -666,6 +813,18 @@
           tags: true
         });
       });
+    </script>
+    <script>
+
+    $(document).ready(function(){
+    $('#collapseExample').on('shown', function () {
+       $(".fa fa-chevron-down").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up");
+    });
+
+    $('#collapseExample').on('hidden', function () {
+       $(".fa fa-chevron-up").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down");
+    });
+});
     </script>
   </body>
 </html>
