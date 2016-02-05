@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="css/bop-staging.css" rel="stylesheet">
+    <!-- Select 2 -->
+    <link rel="stylesheet" href="css/select2.css">
+
+
+
+
+
+
+    <!-- tinymce Wysiwig editor -->
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+      <script>tinymce.init({ selector:'textarea' });</script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Billion Oyster Program</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="lesson.html">Lesson</a></li>
+            <li class="active"><a href="unit.html">Unit</a></li>
+          <!--  <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+
+
+
+
+
+
+
+    <!-- FORM -->
+        <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="panel panel-default">
+                <!-- Lesson Upload -->
+                <div class="panel-heading">
+                  <div class="panel-title">Lesson Upload</div>
+                  <div class="panel-controls">
+                      <ul>
+                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                          </li>
+                          <!--<li><a href="" data-toggle="refresh" class="portlet-refresh"><i class="fa fa-chevron-down"></i></a>
+                          </li>
+                           <li><a href="" data-toggle="close" class="portlet-close"><i class="portlet-icon portlet-icon-close"></i></a>
+                          </li> -->
+                      </ul>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label for="lessontitle">Lesson Title</label>
+                        <!-- Select 2 plugin -->
+
+                        <div class="row">
+                        <div class="col-md-12">
+                          <select class="js-example-basic-multiple col-md-12" multiple="" style="" id="source">
+
+                          </select>
+                        </div>
+                        </div>
+
+                        <!-- //Select 2 -->
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="Unit">Unit</label>
+                        <select class="form-control">
+                          <option>Action</option>
+                          <option>Field</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div><!--/row-->
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <!-- Lesson Overview -->
+                <div class="panel-heading">
+                  <div class="panel-title">Lesson Overview</div>
+                  <div class="panel-controls">
+                      <ul>
+                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row"><!-- Row nest -->
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="Grade">Grade</label>
+                            <select class="form-control">
+                              <option>6-8</option>
+                              <option>4th</option>
+                              <option>5th</option>
+                              <option>6th</option>
+                              <option>7th</option>
+                              <option>8th</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="Grade">Class Periods</label>
+                              <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="Setting">Setting</label>
+                            <select class="form-control">
+                              <option>Classroom</option>
+                              <option>Field</option>
+                            </select>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="protocolconnections">Protocol Connections</label>
+                            <input type="text" class="form-control" id="lessontitle" placeholder="Lesson Title">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="SubjectArea"><i class="fa fa-graduation-cap"></i>Subject Area(s) <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span></label>
+
+                        <!-- Select 2 plugin -->
+
+                        <div class="row">
+                        <div class="col-md-12">
+                          <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                            <optgroup label="A">
+                              <option value="art">Art</option>
+                              <option value="agriscience">Agriscience & Technology</option>
+                              <option value="arithmetic">Arithmetic</option>
+                              <option value="algebra">Algebra</option>
+                            </optgroup>
+                            <optgroup label="B">
+                              <option value="band">Band</option>
+                              <option value="biology">Biology</option>
+                            </optgroup>
+                            <optgroup label="C">
+                              <option value="chemistry">Chemistry</option>
+                              <option value="civics">Civics</option>
+                              <option value="computer">Computer Information Systems</option>
+                              <option value="creativewriting">Creative Writing</option>
+                            </optgroup>
+                            <optgroup label="E">
+                              <option value="earthscience">Earth Science</option>
+                              <option value="economics">Economics</option>
+                              <option value="english">English</option>
+                            </optgroup>
+                            <optgroup label="G">
+                              <option value="earthscience">Geometry</option>>
+                            </optgroup>
+                            <optgroup label="L">
+                              <option value="lifescience">Life Science</option>
+                            </optgroup>
+                            <optgroup label="M">
+                              <option value="math">Math</option>
+                              <option value="marinebiology">Marine Biology</option>
+                            </optgroup>
+                            <optgroup label="P">
+                              <option value="physicalscience">Physical Science</option>
+                              <optgroup label="G">
+                                <option value="prealgebra">Pre-Algebra</option>
+                              </optgroup>
+                            </optgroup>
+                            <optgroup label="S">
+                              <option value="science">Science</option>
+                              <option value="socialengineering">Social Engineering</option>
+                              <option value="socialstudies">Social Studies</option>
+                            </optgroup>
+                            <optgroup label="T">
+                              <option value="technology">Technology</option>
+                            </optgroup>
+                            <optgroup label="W">
+                              <option value="worldgeography">World Geography</option>>
+                            </optgroup>
+                          </select>
+                        </div>
+                        </div>
+
+                        <!-- //Select 2 -->
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- //Row nest -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="lessonsummary">Lesson Summary</label>
+                      <textarea class="form-control" rows="8"></textarea>
+                    </div>
+                  </div>
+                </div><!--/ Pannel-body -->
+              </div><!--/ Pannel -->
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <!-- Lesson Objectives -->
+                    <div class="panel-heading">
+                      <div class="panel-title">Lesson Objectives</div>
+                      <div class="panel-controls">
+                          <ul>
+                              <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="objectives">Objectives</label>
+                          <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <!-- Materials & Resources -->
+                <div class="panel-heading">
+                  <div class="panel-title">Materials & Resources</div>
+                  <div class="panel-controls">
+                      <ul>
+                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="objectives">Supplies</label>
+                          <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="vocabulary">Teacher Resources</label>
+                          <textarea class="form-control" rows="6" placeholder="This is a dynamic module area"></textarea>
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <label for="handouts">Handouts</label>
+                            <div class="form-group">
+                              <label for="exampleInputFile">File input</label>
+                              <input type="file" id="exampleInputFile">
+                              <p class="help-block">Grad & Drop your Files or upload theme here</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="vocabulary">Vocabulary</label>
+                            <!-- Select 2 plugin -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                                <option value="art">Art</option>
+                                <option value="ecosystem">Ecosystem</option>
+                                <option value="hypothesis">Hypothesis</option>
+                                <option value="art">Oyster</option>
+                                <option value="science">Science</option>
+
+                              </select>
+                            </div>
+                            </div>
+
+                            <!-- //Select 2 -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <!-- Background -->
+                    <div class="panel-heading">
+                      <div class="panel-title">Background</div>
+                      <div class="panel-controls">
+                          <ul>
+                              <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="background">Background</label>
+                          <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="insttructionplan">Instruction Plan</label>
+                          <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="nycsciencescope">New York City Science Scope & Sequence</label>
+                            <!-- Select 2 plugin -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                                <optgroup label="PS1 Matter and Its Interactions">
+                                  <option value="ps1A">PS1A Structure and Properties of matter</option>
+                                  <option value="ps1b">PS1B Chemical Reactions</option>
+                                  <option value="ps1c">PS1C Nuclear Processes</option>
+                                </optgroup>
+                                <optgroup label="ESS1 Earth’s Place in the Universe">
+                                  <option value="ess1a">ESS1A The Universe and Its Stars</option>
+                                  <option value="ess1b">ESS1B Earth and the Solar System</option>
+                                    <option value="ess1c">ESS1C The History of Planet Earth ESS2 Earth’s </option>
+                                </optgroup>
+                                <optgroup label="ESS2 Earth’s Systems">
+                                  <option value="ess2a">ESS2A Earth Materials and Systems</option>
+                                  <option value="ess2b">ESS2B Plate Tectonics and Large-Scale System Interactions</option>
+                                    <option value="ess2c">ESS2C The Roles of Water in Earth’s Surface Processes</option>
+                                </optgroup>
+                                </optgroup>
+                                <option value="g8unit">PS1 Matter and Its Interactions</option>
+
+                                <option value="g8unit">Grade 8, Unit1: Humans and the Environment</option>
+
+                              </select>
+                            </div>
+                            </div>
+
+                            <!-- //Select 2 -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="ngssstandards">NGSS Standards</label>
+                            <!-- Select 2 plugin -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                                <optgroup label="PS1 Matter and Its Interactions">
+                                  <option value="ps1A">PS1A Structure and Properties of matter</option>
+                                  <option value="ps1b">PS1B Chemical Reactions</option>
+                                  <option value="ps1c">PS1C Nuclear Processes</option>
+                                </optgroup>
+                                <optgroup label="ESS1 Earth’s Place in the Universe">
+                                  <option value="ess1a">ESS1A The Universe and Its Stars</option>
+                                  <option value="ess1b">ESS1B Earth and the Solar System</option>
+                                    <option value="ess1c">ESS1C The History of Planet Earth ESS2 Earth’s </option>
+                                </optgroup>
+                                <optgroup label="ESS2 Earth’s Systems">
+                                  <option value="ess2a">ESS2A Earth Materials and Systems</option>
+                                  <option value="ess2b">ESS2B Plate Tectonics and Large-Scale System Interactions</option>
+                                    <option value="ess2c">ESS2C The Roles of Water in Earth’s Surface Processes</option>
+                                </optgroup>
+                                </optgroup>
+                                <option value="g8unit">PS1 Matter and Its Interactions</option>
+
+                                <option value="g8unit">Grade 8, Unit1: Humans and the Environment</option>
+
+                              </select>
+                            </div>
+                            </div>
+
+                            <!-- //Select 2 -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="commoncoreela">Common Core ELA</label>
+                            <!-- Select 2 plugin -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                                <optgroup label="PS1 Matter and Its Interactions">
+                                  <option value="ps1A">PS1A Structure and Properties of matter</option>
+                                  <option value="ps1b">PS1B Chemical Reactions</option>
+                                  <option value="ps1c">PS1C Nuclear Processes</option>
+                                </optgroup>
+                                <optgroup label="ESS1 Earth’s Place in the Universe">
+                                  <option value="ess1a">ESS1A The Universe and Its Stars</option>
+                                  <option value="ess1b">ESS1B Earth and the Solar System</option>
+                                    <option value="ess1c">ESS1C The History of Planet Earth ESS2 Earth’s </option>
+                                </optgroup>
+                                <optgroup label="ESS2 Earth’s Systems">
+                                  <option value="ess2a">ESS2A Earth Materials and Systems</option>
+                                  <option value="ess2b">ESS2B Plate Tectonics and Large-Scale System Interactions</option>
+                                    <option value="ess2c">ESS2C The Roles of Water in Earth’s Surface Processes</option>
+                                </optgroup>
+                                </optgroup>
+                                <option value="g8unit">PS1 Matter and Its Interactions</option>
+
+                                <option value="g8unit">Grade 8, Unit1: Humans and the Environment</option>
+
+                              </select>
+                            </div>
+                            </div>
+
+                            <!-- //Select 2 -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="commoncoremath">Common Core Math</label>
+                            <!-- Select 2 plugin -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                              <select class="js-example-basic-multiple col-md-12" multiple="multiple" style="" id="source">
+                                <optgroup label="PS1 Matter and Its Interactions">
+                                  <option value="ps1A">PS1A Structure and Properties of matter</option>
+                                  <option value="ps1b">PS1B Chemical Reactions</option>
+                                  <option value="ps1c">PS1C Nuclear Processes</option>
+                                </optgroup>
+                                <optgroup label="ESS1 Earth’s Place in the Universe">
+                                  <option value="ess1a">ESS1A The Universe and Its Stars</option>
+                                  <option value="ess1b">ESS1B Earth and the Solar System</option>
+                                    <option value="ess1c">ESS1C The History of Planet Earth ESS2 Earth’s </option>
+                                </optgroup>
+                                <optgroup label="ESS2 Earth’s Systems">
+                                  <option value="ess2a">ESS2A Earth Materials and Systems</option>
+                                  <option value="ess2b">ESS2B Plate Tectonics and Large-Scale System Interactions</option>
+                                    <option value="ess2c">ESS2C The Roles of Water in Earth’s Surface Processes</option>
+                                </optgroup>
+                                </optgroup>
+                                <option value="g8unit">PS1 Matter and Its Interactions</option>
+
+                                <option value="g8unit">Grade 8, Unit1: Humans and the Environment</option>
+
+                              </select>
+                            </div>
+                            </div>
+
+                            <!-- //Select 2 -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- FORM -->
+
+
+
+
+
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Subject Area</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Most Common</p>
+            <ul class="subject-common">
+              <li>Science</li>
+              <li>Engineering</li>
+              <li>Math</li>
+              <li>History</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="input-group modal-search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search for...">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+            </div>
+            <ul class="subject-cat-list">
+              <li class="subject-cat-title">A</li>
+                <ul class="subject-cat-list_subcat">
+                  <li>Art</li>
+                  <li>Algebra</li>
+                </ul>
+              <li class="subject-cat-title">B</li>
+                <ul class="subject-cat-list_subcat">
+                  <li>Biology</li>
+                </ul>
+              <li class="subject-cat-title">C</li>
+                <ul class="subject-cat-list_subcat">
+                  <li>Chemistry</li>
+                </ul>
+            </ul>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- / Modal -->
+
+
+
+
+
+
+
+
+<!-- Select 2 -->
+
+
+<!-- Tinymce -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script>
+      $(function(){
+        // turn the element to select2 select style
+        $('#select2').select2();
+      });
+      $(function(){
+        // turn the element to select2 select style
+        $(".js-example-basic-multiple").select2({
+          tags: true
+        });
+      });
+    </script>
+  </body>
+</html>

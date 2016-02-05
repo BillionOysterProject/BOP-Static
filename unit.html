@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Select 2 -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<link href="css/bop-staging.css" rel="stylesheet">
+<!-- Select 2 -->
+<link rel="stylesheet" href="css/select2.css">
+
+<!-- tinymce Wysiwig editor -->
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Billion Oyster Program</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse ">
+            <ul class="nav navbar-nav">
+              <li><a href="lesson.html">Lesson</a></li>
+              <li class="active"><a href="unit.html">Unit</a></li>
+            <!--  <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+
+
+
+
+
+
+    <!-- FORM -->
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="panel panel-transparent">
+              <ul class="nav nav-tabs nav-tabs-right unit-stage-tabs" id="main" role="tablist">
+                  <li class="active"><a href="#stage1" data-toggle="tab" pg-tab role="tab">Stage 1</a>
+                  </li>
+                  <li><a href="#stage2" data-toggle="tab" pg-tab role="tab">Stage 2</a>
+                  </li>
+              </ul>
+              <div class="tab-content bg-white">
+                  <div class="tab-pane active" id="stage1">
+                      <div class="row column-seperation">
+                        <div class="col-md-12">
+                          <!-- stage 1-->
+
+
+
+
+
+
+                          <div class="unit-form">
+                            <!-- <h3>Stage 1 - Desired Results</h3> -->
+
+                              <!-- Unit Title -->
+                              <div class="panel panel-default">
+                                <!-- <div class="panel-heading">
+                                  <div class="panel-title">Unit Title</div>
+                                  <div class="panel-controls">
+                                      <ul>
+                                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div> -->
+                                <div class="panel-body">
+                                  <div class="row">
+                                    <div class="col-md-8">
+                                      <div class="form-group">
+                                        <label for="unittitle">Unit Title</label>
+                                        <input type="text" class="form-control" id="unittitle" placeholder="Lesson Title">
+                                      </div>
+                                    </div>
+                                  </div><!--/row-->
+                                </div>
+                              </div>
+
+
+                              <!-- Enduring Understandings -->
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <div class="panel-title">Stage 1 - Desired Results</div>
+                                  <div class="panel-controls">
+                                      <ul>
+                                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="panel-body">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <h4>Enduring Understandings</h4>
+                                      <p>The concepts and skills students will understand and be able to use several years into the future:</p>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="fieldwork">Field Work</label>
+                                        <input type="text" class="form-control" id="lessontitle" placeholder="Field Work">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label for="sciencecontent">Science Content</label>
+                                        <input type="text" class="form-control" id="sciencecontent" placeholder="Science Content">
+                                      </div>
+                                    </div>
+                                  </div><!--/row-->
+                                </div>
+                              </div>
+
+
+                              <!-- Essential Questions -->
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <div class="panel-title">Essential Question(s)</div>
+                                  <div class="panel-controls">
+                                      <ul>
+                                          <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                                <div class="panel-body">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <p>Open-ended question(s) that stimulate thought and inquiry linked to the content of the enduring understanding:</p>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-8">
+                                      <div class="form-group">
+                                        <label for="question">Questions</label>
+                                        <input type="text" class="form-control" id="question" placeholder="Please add a Question">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="question">Questions</label>
+                                        <input type="text" class="form-control" id="question" placeholder="Please add a Question">
+                                      </div>
+                                      <div class=""><a href="#"><i class="fa fa-plus-circle"></i> Add a Question</a></div>
+                                    </div>
+                                  </div><!--/row-->
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <!-- Lesson Objectives -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <div class="panel-title">Acquisition</div>
+                                      <div class="panel-controls">
+                                          <ul>
+                                              <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                    <div class="panel-body">
+
+                                    <!-- Insert panel tabs -->
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-transparent">
+                                            <ul class="nav nav-tabs nav-tabs-right nav-justified" id="tab-4" role="tablist">
+                                                <li class="active"><a href="#tab1Science" data-toggle="tab" pg-tab role="tab">Science Content/Skills</a>
+                                                </li>
+                                                <li><a href="#tab2Math" data-toggle="tab" pg-tab role="tab">Math Content/Skills</a>
+                                                </li>
+                                                <li><a href="#tab3Field" data-toggle="tab" pg-tab role="tab">Field Content/Skills</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content bg-white">
+                                                <div class="tab-pane active" id="tab1Science">
+                                                    <div class="row column-seperation">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Science Content/Skills</label>
+                                                        <p>Open-ended question(s) that stimulate thought and inquiry linked to the content of the enduring understanding:</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="tab2Math">
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Math Content/Skills</label>
+                                                        <p>Open-ended question(s) that stimulate thought and inquiry linked to the content of the enduring understanding:</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab3Field">
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Field Content/Skills</label>
+                                                        <p>Open-ended question(s) that stimulate thought and inquiry linked to the content of the enduring understanding:</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // panel tabs -->
+                                    <hr>
+                                    <!-- Insert panel tabs -->
+                                    <div class="col-lg-12">
+                                      <label for="lessons">Lessons</label>
+                                        <div class="panel panel-transparent">
+                                            <ul class="nav nav-tabs nav-tabs-right nav-justified" id="tab-4" role="tablist">
+                                                <li class="active"><a href="#tab4ScienceLesson" data-toggle="tab" pg-tab role="tab">Science Lessons</a>
+                                                </li>
+                                                <li><a href="#tab5MathLesson" data-toggle="tab" pg-tab role="tab">Math Lessons</a>
+                                                </li>
+                                                <li><a href="#tab6FieldLesson" data-toggle="tab" pg-tab role="tab">Field Lessons</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content bg-white">
+                                                <div class="tab-pane active" id="tab4ScienceLesson">
+                                                    <div class="row column-seperation">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Science Lessons</label>
+                                                        <p>How will students acquit row above knowledge and skills?</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="tab5MathLesson">
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Math Lessons</label>
+                                                        <p>How will students acquit row above knowledge and skills?</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab6FieldLesson">
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <label for="objectives">Field Lessons</label>
+                                                        <p>How will students acquit row above knowledge and skills?</p>
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // panel tabs -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pull-right"><!-- No classes assigned -->
+                              <button type="submit" class="btn btn-primary" href="#stage2" data-toggle="tab" pg-tab role="tab">Next</button>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- //stage 1-->
+                      </div>
+                    </div>
+                </div>
+                <div class="tab-pane " id="stage2">
+                    <div class="row">
+                      <div class="col-md-12">
+<!-- Stage 2 -->
+
+
+
+
+
+
+
+<div class="row">
+  <div class="">
+    <h3>"Dynamic Unit Title" Pulls the tiele a user types in stage 1</h3>
+
+      <!-- Unit Title -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">Stage 2 - Evidence</div>
+          <div class="panel-controls">
+              <ul>
+                  <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="numberexpectation">Number: Expectation</label>
+                <!-- Select 2 plugin -->
+
+                <div class="row">
+                <div class="col-md-12">
+                  <select id="numberexpectation" class="js-example-basic-multiple col-md-12" multiple="" style="width:600px" id="source" placeholder="What project would you like to connect to">
+                      <option value="proj1">K-PS2-1 Plan and conduct an investigation to compare the effects of different strengths or different directions of pushes
+and pulls on the motion of an object.</option>
+                      <option value="proj2">K-PS2-2 Analyze data to determine if a design solution works as intended to change the speed or direction of an object
+with a push or a pull.</option>
+
+                  </select>
+                </div>
+                </div>
+
+                <!-- //Select 2 -->
+              </div>
+            </div>
+          </div><!--/row-->
+          <!-- Insert panel tabs -->
+          <div class="col-lg-12">
+              <div class="panel panel-transparent">
+                  <ul class="nav nav-tabs nav-tabs-right nav-justified stage2-tabs" id="tab-4" role="tablist">
+                      <li class="active stage2-tab1"><a href="#tab7ScienceEngineering" data-toggle="tab" pg-tab role="tab">1 Science and Engineering</a>
+                      </li>
+                      <li class="stage2-tab2"><a href="#tab8Disciplinary" data-toggle="tab" pg-tab role="tab">2 Disciplinary Core Ideas</a>
+                      </li>
+                      <li class="stage2-tab3"><a href="#tab9Crosscutting" data-toggle="tab" pg-tab role="tab">3 Cross-Cutting Concepts</a>
+                      </li>
+                  </ul>
+                  <div class="tab-content bg-white">
+                      <div class="tab-pane active" id="tab7ScienceEngineering">
+                          <div class="row column-seperation">
+                            <div class="col-md-12">
+                              <label for="objectives">Science & Engineering</label>
+                              <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane " id="tab8Disciplinary">
+                          <div class="row">
+                            <div class="col-md-12 stage2-tab2">
+                              <label for="objectives">Disciplinary Core Ideas</label>
+                              <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane " id="tab9Crosscutting">
+                          <div class="row">
+                            <div class="col-md-12 stage2-tab3">
+                              <label for="objectives">3 Cross-Cutting Concepts</label>
+                              <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- // panel tabs -->
+        </div>
+      </div>
+
+
+      <!-- Enduring Understandings -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">Assessment Evidence</div>
+          <div class="panel-controls">
+              <ul>
+                  <li><a href="" data-toggle="collapse" class="portlet-collapse"><i class="fa fa-chevron-down"></i></a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Students will show their learning by…</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="researchproject">Research Project</label>
+                <!-- Select 2 plugin -->
+
+                <div class="row">
+                <div class="col-md-12">
+                  <select class="js-example-basic-multiple col-md-12" multiple="" style="width:600px" id="source" placeholder="What project would you like to connect to">
+                      <option value="proj1">How do site conditions affect oyster growth?</option>
+                      <option value="proj2">Design your own oyster reef in New York Harbor</option>
+                      <option value="proj3">Who lives in my Oyster Restoration Station?</option>
+                      <option value="proj4">Who lives in my Oyster Restoration Station?</option>
+                      <option value="proj5">Project: Improving Wastewater Treatment</option>
+
+                  </select>
+                </div>
+                </div>
+
+                <!-- //Select 2 -->
+              </div>
+            </div>
+          </div><!--/row-->
+<div class="row">
+          <div class="col-md-12 stage2-tab3">
+            <label for="objectives">Extensions</label>
+            <textarea class="form-control" rows="6"></textarea>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="pull-right"><!-- No classes assigned -->
+        <button type="submit" class="btn btn-default" href="#stage1" data-toggle="tab" pg-tab role="tab">Back</button>
+        <button type="submit" class="btn btn-primary" href="#stage2" data-toggle="tab" pg-tab role="tab">Submit</button>
+      </div>
+    </div>
+  </div><!-- /form section 2-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- // Stage 2 -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div><!-- container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script>
+      $(function(){
+        // turn the element to select2 select style
+        $('#select2').select2();
+      });
+      $(function(){
+        // turn the element to select2 select style
+        $(".js-example-basic-multiple").select2({
+          tags: true
+        });
+      });
+    </script>
+  </body>
+</html>
