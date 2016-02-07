@@ -1206,6 +1206,9 @@
   background-color: #5CB85C;
   border: 1px solid #5CB85C; }
 
+.standards, .instruction, .acquisition, .lessons, .evidence {
+  padding: 0px; }
+
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -2467,6 +2470,25 @@
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626; }
+
+.jumbotron {
+  margin: -20px 0px 0px;
+  padding-top: 170px;
+  background-color: #464646; }
+
+.jumbotron {
+  margin: -20px 0px 0px; }
+
+.jumbotron h1 {
+  color: white;
+  text-shadow: 0 0 6px #050101; }
+
+ul.subjectarea {
+  list-style-type: none; }
+  ul.subjectarea li {
+    float: left;
+    margin: 0px;
+    padding-right: 10px; }
 
 .modal .close:focus {
   outline: 0; }
