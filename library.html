@@ -12,7 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link href="css/bop-staging.css" rel="stylesheet">
+    <link href="css/bop-style.css" rel="stylesheet">
     <!-- Select 2 -->
     <link rel="stylesheet" href="css/select2.css">
 
@@ -125,7 +125,7 @@
             	 </button>
           </div>
              <!-- <div class="" id="sub-nav"> -->
-               <div id="navbar" class="navbar-collapse collapse">
+               <div id="navigation-default2" class="navbar-collapse collapse">
              	<div class="row">
                 	<div class="col-sm-9 button-group filters-button-group">
                     <div class="library-filter-nav">
@@ -143,6 +143,7 @@
                     <ul class="dropdown-menu">
                       <li><a data-filter="*">Show All</a></li>
                       <li><a data-filter=".science">Science</a></li>
+                      <div class="dropdown-divider"></div>
                       <ul class="dropdown-sub">
                         <li><a data-filter=".marinebio">Marine Biology</a></li>
                         <li><a data-filter=".ecology">Ecology</a></li>
@@ -150,12 +151,14 @@
                         <li><a data-filter=".limnology">Limnology</a></li>
                       </ul>
                       <li><a data-filter=".technology">Technology</a></li>
+                      <div class="dropdown-divider"></div>
                       <ul class="dropdown-sub">
                         <li><a data-filter=".computerscience">Computer Science</a></li>
                       </ul>
-                      <li><a data-filter=".Engineering">Engineering</a></li>
+                      <li><a data-filter=".engineering">Engineering</a></li>
                       <li><a data-filter=".math">Math</a></li>
                       <li><a data-filter=".socialstudies">Social Studies</a></li>
+                      <div class="dropdown-divider"></div>
                       <ul class="dropdown-sub">
                         <li><a data-filter=".history">History</a></li>
                         <li><a data-filter=".economics">Economics</a></li>
@@ -176,11 +179,11 @@
                    <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Units<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a data-filter=".urbaneco">NYC's Urban Ecosystem</a></li>
-                        <li><a data-filter=".oysters">Oysters</a></li>
-                        <li><a data-filter=".mobileorganism">Mobile Organisms</a></li>
-                        <li><a data-filter=".sessileorganism">Sessile Organisms</a></li>
-                        <li><a data-filter=".waterquality">Water Quality</a></li>
+                        <li><a data-filter=".urbaneco"><i class="fa fa-circle text-primary"></i> NYC's Urban Ecosystem</a></li>
+                        <li><a data-filter=".oysters"><i class="fa fa-circle text-success"></i> Oysters</a></li>
+                        <li><a data-filter=".mobileorganism"><i class="fa fa-circle text-default"></i> Mobile Organisms</a></li>
+                        <li><a data-filter=".sessileorganism"><i class="fa fa-circle text-warning"></i> Sessile Organisms</a></li>
+                        <li><a data-filter=".waterquality"><i class="fa fa-circle text-info"></i> Water Quality</a></li>
                       </ul>
                     </li>
                </ul>
@@ -211,16 +214,16 @@
 <div class="library">
 <div class="grid">
   <!-- Lesson Panel -->
-  <div class="library-item math ">
-    <div class="panel panel-default" data-category="transition">
+  <div class="library-item science socialstudies technology history math engineering classroom urbaneco">
+    <div class="panel panel-primary" data-category="transition">
       <div class="panel-heading">
-        <i class="fa fa-leanpub"></i> Field Intro
+        <i class="fa fa-book"></i> Field Intro
         <span class="grade pull-right">
-          8th
+          6-8th
         </span>
       </div>
       <div class="panel-body">
-        <h6>Field</h6>
+        <h6>Observation and Inference</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mi mollis diam laoreet vehicula.
           Sed molestie, diam eu lacinia tincidunt, lectus purus fringilla sem, at sagittis orci leo ultrices neque.
           Vivamus ut magna mauris. Suspendisse ex lectus, aliquet in justo et, hendrerit sollicitudin lorem.</p>
@@ -228,59 +231,188 @@
       <div class="panel-footer">
         NYC's Urban Ecosystem
         <span class="subjects pull-right">
-          7 Subjects
+          <div class="dropdown">
+            <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+              6 Subjects
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li><a data-filter=".science">Science</a></li>
+              <li><a data-filter=".socialstudies">Social Studies</a></li>
+              <li><a data-filter=".technology">Technology</a></li>
+              <li><a data-filter=".history">History</a></li>
+              <li><a data-filter=".math">Math</a></li>
+              <li><a data-filter=".technology">Technology</a></li>
+            </ul>
+          </div>
         </span>
       </div>
     </div>
   </div>
     <!-- // Lesson Panel -->
     <!-- Lesson Panel -->
-    <div class="library-item classroom ">
-      <div class="panel panel-default" data-category="transition">
+    <div class="library-item science classroom oysters">
+      <div class="panel panel-oyster" data-category="transition">
         <div class="panel-heading">
-          <i class="fa fa-leanpub"></i> Field Intro
+          <i class="fa fa-book"></i> Oyster
           <span class="grade pull-right">
             8th
           </span>
         </div>
         <div class="panel-body">
-          <h6>Field</h6>
+          <h6>Oyster Lifecycle</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mi mollis diam laoreet vehicula.
             Sed molestie, diam eu lacinia tincidunt, lectus purus fringilla sem, at sagittis orci leo ultrices neque.
             Vivamus ut magna mauris. Suspendisse ex lectus, aliquet in justo et, hendrerit sollicitudin lorem.</p>
         </div>
         <div class="panel-footer">
-          NYC's Urban Ecosystem
+          Oysters
           <span class="subjects pull-right">
-            7 Subjects
+            <div class="dropdown">
+              <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                1 Subject
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li><a data-filter=".science">Science</a></li>
+              </ul>
+            </div>
           </span>
         </div>
       </div>
     </div>
       <!-- // Lesson Panel -->
       <!-- Lesson Panel -->
-      <div class="library-item oyster">
-        <div class="panel panel-default" data-category="transition">
+      <div class="library-item science classroom oysters">
+        <div class="panel panel-oyster" data-category="transition">
           <div class="panel-heading">
-            <i class="fa fa-leanpub"></i> Oysters
+            <i class="fa fa-book"></i> Oyster
             <span class="grade pull-right">
-              8th
+              7th
             </span>
           </div>
           <div class="panel-body">
-            <h6>Oyster Restoration Station Simulation</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mi mollis diam laoreet vehicula.
-              Sed molestie, diam eu lacinia tincidunt, lectus purus fringilla sem, at sagittis orci leo ultrices neque.
-              Vivamus ut magna mauris. Suspendisse ex lectus, aliquet in justo et, hendrerit sollicitudin lorem.</p>
+            <h6>Filter Feeders</h6>
+            <p>Students will design their own filter out of household items to see how many food particles they can filter out of the water.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus mi mollis diam laoreet vehicula.
+              Sed molestie, diam eu lacinia tincidunt, lectus purus fringilla sem.</p>
           </div>
           <div class="panel-footer">
-            NYC's Urban Ecosystem
+            Oysters
             <span class="subjects pull-right">
-              7 Subjects
+              <div class="dropdown">
+                <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                  1 Subject
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li><a data-filter=".science">Science</a></li>
+                </ul>
+              </div>
             </span>
           </div>
         </div>
       </div>
+        <!-- // Lesson Panel -->
+        <!-- Lesson Panel -->
+        <div class="library-item science englishlanguagearts math technology classroom field mobileorganism">
+          <div class="panel panel-mobile_organisms" data-category="transition">
+            <div class="panel-heading">
+              <i class="fa fa-book"></i> Mobile Organisms
+              <span class="grade pull-right">
+                6-8th
+              </span>
+            </div>
+            <div class="panel-body">
+              <h6>Leaf Pack Investigation as a biological indicator of water quality</h6>
+              <p>Students will design their own filter out of household items to see how many food particles they can filter out of the water.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="panel-footer">
+              Oysters
+              <span class="subjects pull-right">
+                <div class="dropdown">
+                  <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    1 Subject
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li><a data-filter=".science">Science</a></li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- // Lesson Panel -->
+        <!-- Lesson Panel -->
+        <div class="library-item science socialstudies technology history math engineering classroom sessileorganism">
+          <div class="panel panel-sessile_organisms" data-category="transition">
+            <div class="panel-heading">
+              <i class="fa fa-flask"></i> Sessile Organisms
+              <span class="grade pull-right">
+                6-8th
+              </span>
+            </div>
+            <div class="panel-body">
+              <h6>Ad Libitum Sampling of Invertebrate</h6>
+              <p>The purpose is to identify various types of invertebrate and to critically examine the classification
+                system of marine organisms and to classify creatures based on observable structures and differentiate different types of invertebrates.</p>
+            </div>
+            <div class="panel-footer">
+              Sessile Organisms
+              <span class="subjects pull-right">
+                <div class="dropdown">
+                  <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    6 Subjects
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li><a data-filter=".science">Science</a></li>
+                    <li><a data-filter=".socialstudies">Social Studies</a></li>
+                    <li><a data-filter=".technology">Technology</a></li>
+                    <li><a data-filter=".history">History</a></li>
+                    <li><a data-filter=".math">Math</a></li>
+                    <li><a data-filter=".technology">Technology</a></li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- // Lesson Panel -->
+        <!-- Lesson Panel -->
+        <div class="library-item science oceanography marinebio field waterquality">
+          <div class="panel panel-water_quality" data-category="transition">
+            <div class="panel-heading">
+              <i class="fa fa-tint"></i> Water Quality Testing
+              <span class="grade pull-right">
+                6-8th
+              </span>
+            </div>
+            <div class="panel-body">
+              <h6>Ad Libitum Sampling of Invertebrate</h6>
+              <p>The purpose is to identify various types of invertebrate and to critically examine the classification
+                system of marine organisms and to classify creatures based on observable structures and differentiate different types of invertebrates.</p>
+            </div>
+            <div class="panel-footer">
+              Water Quality Testing
+              <span class="subjects pull-right">
+                <div class="dropdown">
+                  <button class="btn btn-xs btn-simple dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    3 Subjects
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li><a data-filter=".science">Science</a></li>
+                    <li><a data-filter=".oceanography">Oceanography</a></li>
+                    <li><a data-filter=".marinebio">Marine Biology</a></li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
         <!-- // Lesson Panel -->
 
 

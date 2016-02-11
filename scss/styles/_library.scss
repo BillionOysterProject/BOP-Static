@@ -6,16 +6,49 @@
 
 /* ---- .element-item ---- */
 
-/* .element-item {
+/* grid
+------------------------- */
+
+.grid {
+
+
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- counting ---- */
+
+.grid--counting {
+  counter-reset: item;
+}
+
+.grid--counting .grid-item:before {
+  counter-increment: item;
+  content: counter(item);
+  display: block;
+  color: #555;
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ---- horizontal ---- */
+
+/* horizontal examples need height */
+.grid--horizontal {
+  height: 334px;
+}
+
+/* ---- static banner ---- */
+
+.grid--has-banner {
   position: relative;
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  padding: 10px;
-  background: #888;
-  color: #262524;
-}*/
+}
 
 .library {
 
@@ -23,7 +56,6 @@
     position: relative;
     float: left;
     width: 33%;
-    height: 100px;
     margin: 5px 0px 5px 0px;
     padding: 10px;
   //background: #888;
@@ -73,7 +105,7 @@
 	color: #333333;
 }
 .dropdown-sub a:hover {
-	background-color: gray;
+
 }
 /*
 .panel-heading {
@@ -116,5 +148,22 @@
     text-transform: uppercase;
     //font-weight: bolder;
   }
+}
+*/
+
+/*
+.panel-primary>.panel-heading {
+  color:#fff;
+  background-color:#337ab7;
+  border-color:#337ab7;
+}
+.panel-primary>.panel-footer{
+  padding:10px 15px;
+  background-color: transparent;
+  border: none;
+  //background-color:#f5f5f5;
+  //border-top:1px solid #ddd;
+  border-bottom-right-radius:3px;
+  border-bottom-left-radius:3px;
 }
 */
