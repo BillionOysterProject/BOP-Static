@@ -1,0 +1,1 @@
+var elem=document.querySelector(".grid"),iso=new Isotope(elem,{itemSelector:".grid-item",layoutMode:"fitRows"}),iso=new Isotope(".grid",{});
