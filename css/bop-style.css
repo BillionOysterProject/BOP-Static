@@ -7503,6 +7503,16 @@ ul.subjectarea {
     padding-right: 10px; }
 
 /* ---- .element-item ---- */
+.wrapper .library-search {
+  margin-top: -20px; }
+
+.library-search {
+  background-color: #dfdfdf;
+  margin: 0px;
+  padding: 70px 0px; }
+  .library-search h1 {
+    margin: 0px; }
+
 /* grid
 ------------------------- */
 /* clearfix */
