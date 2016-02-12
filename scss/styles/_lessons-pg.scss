@@ -1,5 +1,23 @@
 // Lessons Landing Page
 //------------------------------------------------------
+$science-blue:                 #00BCD4 !default;
+$technology-bluegrey:          #607D8B !default;
+$engineering-grey:             #9E9E9E !default;
+$math-green:                   #4CAF50 !default;
+$socialstudies-brown:          #795548 !default;
+$english-orange:               #FF5722 !default;
+$music-purple:                 #673AB7 !default;
+$art-pink:                     #E91E63 !default;
+
+
+.lesson_pg a {
+  color: $black-color;
+
+  a:hover {
+
+  }
+}
+
 .lesson-title {
 	position: relative;
 	margin-top: -60px;
@@ -77,4 +95,69 @@ ul.subjectarea  {
 
 .img-post {
   padding: 20px 0;
+}
+
+
+// BOP Labels
+.label-science{
+    border-color: $science-blue;
+    color: $science-blue;
+}
+.label-technology{
+    border-color: $technology-bluegrey;
+    color: $technology-bluegrey;
+}
+.label-engineering{
+    border-color: $engineering-grey;
+    color: $engineering-grey;
+}
+.label-math{
+    border-color: $math-green;
+    color: $math-green;
+}
+.label-socialstudies{
+    border-color: $socialstudies-brown;
+    color: $socialstudies-brown;
+}
+.label-english{
+    border-color: $english-orange;
+    color: $english-orange;
+}
+.label-music{
+    border-color: $music-purple;
+    color: $music-purple;
+}
+.label-art{
+    border-color: $art-pink;
+    color: $art-pink;
+}
+
+.label-technology{
+    border-color: $technology-bluegrey;
+    color: $technology-bluegrey;
+}
+.label-science.label-fill, .progress-bar, .progress-bar-science{
+   background-color: $science-blue;
+}
+.label-technology.label-fill, .progress-bar, .progress-bar-technology{
+   background-color: $technology-bluegrey;
+}
+.label-engineering.label-fill, .progress-bar, .progress-bar-engineering{
+   background-color: $engineering-grey;
+}
+.label-math.label-fill, .progress-bar, .progress-bar-math{
+   background-color: $math-green;
+}
+.label-socialstudies.label-fill, .progress-bar, .progress-bar-socialstudies{
+   background-color: $socialstudies-brown;
+}
+.label-english.label-fill, .progress-bar, .progress-bar-english{
+   background-color: $english-orange;
+}
+.label-music.label-fill, .progress-bar, .progress-bar-music{
+   background-color: $music-purple;
+}
+
+.label-art.label-fill, .progress-bar, .progress-bar-art{
+   background-color: $art-pink;
 }
