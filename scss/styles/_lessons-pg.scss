@@ -1,25 +1,80 @@
 // Lessons Landing Page
 //------------------------------------------------------
-.jumbotron {
-  margin: -20px 0px 0px;
-	padding-top: 170px;
-  background-color: #464646;
-
-	//* background: url(../assets/img/oyster-students.jpg) -40px no-repeat scroll;
-  }
- .jumbotron {
-    margin: -20px 0px 0px;
-    }
-.jumbotron h1{
-	color: white;
-	text-shadow: 0 0 6px #050101;
+.lesson-title {
+	position: relative;
+	margin-top: -60px;
+	background-color: $white-bg;
+}
+.lesson-title h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 ul.subjectarea  {
 	list-style-type: none;
-  
+  padding: 0px;
+
   li {
     float: left;
     margin: 0px;
     padding-right: 10px;
   }
+}
+
+
+// Author
+
+.card-author {
+  background-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0px;
+  }
+.card-author a {
+    color: $default-color;
+}
+.card-author a:hover {
+    color: $dark-gray;
+}
+
+.card-author .avatar {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid transparent;
+  float: left;
+}
+.card-author .image-plain {
+  height: 0;
+  margin-top: 10px; }
+.card-author .author {
+  text-transform: none;
+  /*margin-top: -70px;*/
+  }
+
+  .card-author .avatar.border-gray {
+    border-color: #EEEEEE; }
+.card-author .title {
+  line-height: 24px;
+
+  }
+.card-author .content {
+  min-height: 80px;
+  padding: 5px;
+}
+
+.card-author ul.description li {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  list-style: none;
+  padding-right: 5px;
+
+}
+
+.img-post {
+  padding: 20px 0;
 }

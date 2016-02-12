@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link href="css/bop-staging.css" rel="stylesheet">
+    <link href="css/bop-style.css" rel="stylesheet">
     <!-- Select 2 -->
     <link rel="stylesheet" href="css/select2.css">
 
@@ -32,10 +32,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="lesson_pg">
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-ct-blue">
+    <nav class="navbar navbar-ct-blue navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -57,46 +57,52 @@
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
-
-
-<div class="jumbotron img-src">
-  <div class="container">
-    <h1>Observation & Inference</h1>
-  </div>
-</div>
-
+    <div class="parallax">
+        <div class="parallax-image">
+            <img src="../assets/img/oyster-students.jpg" alt="..." />
+        </div>
+    </div>
+<div class="container lesson-title">
+   <div class="row">
+     <div class="col col-sm-12">
+       <h1>Observation & Inference</h1>
+     </div>
+   </div>
+ </div>
 
 <header class="masthead">
-<!--  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12">
-        <h1><a href="#">Observation & Inference</a></h1>
-      </div>
-    </div>
-  </div> -->
-
   <div class="container">
 	   <div class="row">
-       <div class="col col-sm-12">
-        <div class="panel">
-        <div class="panel-body">
-          <div class="col col-sm-10">
-          <img class="author-avatar img-circle" src="//placehold.it/80x80/E7E7E7">
-            <small>Ann Fraioli</small>
-            <small>BOP Curriculum Team</small>
-          </div>
-          <div class="col col-sm-2 pull-right">
-            <span>June 23,2016</span>
-          </div>
+          <div class="col col-md-12">
+            <div class="card card-author card-plain">
+              <div class="image image-plain"></div>
+              <div class="content">
+                <div class="author text-muted">
+                  <a href="#">
+                    <img class=" avatar border-gray" src="../assets/img/author/annf.jpg" alt="...">
+                    <h4 class="title">Ann Fraioli <br>
+                      <p>
+                        <ul class="description">
+                          <li>
+                          <i class="fa fa-graduation-cap"></i> <a href="#">BOP Curriculum Team</a> <br>
+                          </li>
+                          <li>
+                            <a href="mailto:afraioli@nyharbor.org" target="_top"><i class="fa fa-envelope-o text-muted"></i> Afraioli@nyharbor.org <br>
+                          </li>
+                          <li class="hidden-xs pull-right">
+                            June 23,2016
+                          </li>
+                        </ul>
+                      </p>
+                    </h4>
+                  </a>
+                </div>
+              </div>
         </div>
-
       </div>
   	</div>
     <div class="row">
         <div class="col col-sm-12">
-
-          <div class="panel">
-          <div class="panel-body">
             <div class="col col-sm-12">
               <div class="row">
                 <div class="col col-sm-6">
@@ -148,9 +154,6 @@
               </div>
 
             </div>
-          </div>
-          </div>
-
         </div>
       </div>
   </div>
@@ -158,6 +161,7 @@
 
 <!-- Begin Body -->
 <div class="container">
+  <hr />
 	<div class="row">
   			<div class="col col-sm-3">
               	<div id="sidebar">
@@ -189,11 +193,12 @@
       		</div>
       		<div class="col col-sm-9">
               <div class="panel">
-              <h1>Lesson Overview</h1>
+              <h3>Lesson Overview</h3>
 
               <div class="row">
-              	<div class="col col-sm-12">
+              	<div class="col col-sm-12 img-post">
                   <img src="assets/img/oyster-students.jpg" class="img-responsive">
+                  <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
                 </div>
                 <div class="col col-sm-12">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat erat nec vestibulum. Suspendisse mattis vel neque vitae malesuada. Integer sit amet finibus nibh. Vivamus feugiat, massa sed tincidunt euismod, sapien nisl tristique lectus, eu consequat orci enim pharetra augue. Nullam ac eros nec augue vestibulum sagittis sed ut tellus. Fusce euismod, eros vitae faucibus malesuada, tortor arcu consectetur sapien, at ultrices risus augue ut leo. Nullam efficitur laoreet nisi ac pellentesque. Curabitur a ullamcorper elit. Cras enim orci, varius viverra nibh id, aliquam commodo turpis. Donec lorem lorem, viverra ac volutpat ac, dictum eget mauris. Integer ac eros ligula. Praesent laoreet risus sit amet sodales ultrices. Nullam venenatis consequat ex bibendum efficitur. Quisque ornare quam sed malesuada pellentesque. Fusce sit amet sagittis dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
@@ -310,5 +315,29 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+<!-- Parallax -->
+<script type="text/javascript">
+    var big_image;
+    $().ready(function(){
+        responsive = $(window).width();
+
+        if (responsive >= 768){
+            big_image = $('.parallax-image').find('img');
+
+            $(window).on('scroll',function(){
+                parallax();
+            });
+        }
+
+    });
+
+   var parallax = function() {
+        var current_scroll = $(this).scrollTop();
+
+        oVal = ($(window).scrollTop() / 3);
+        big_image.css('top',oVal);
+    };
+
+</script>
   </body>
 </html>
