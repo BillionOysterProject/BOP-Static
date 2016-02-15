@@ -7735,6 +7735,9 @@ ul.subjectarea {
 .library .panel-link {
   color: inherit;
   text-decoration: none; }
+.library .unit {
+  color: #888888;
+  text-decoration: none; }
 
 .dropdown-sub {
   list-style: none;
@@ -7744,6 +7747,14 @@ ul.subjectarea {
 .dropdown-sub a {
   list-style: none;
   color: #333333; }
+
+.dropdown-header.cat-title a {
+  display: block;
+  padding: 3px 20px 3px 0px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap; }
 
 /*
 .panel-heading {
